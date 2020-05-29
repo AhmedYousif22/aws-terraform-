@@ -21,18 +21,11 @@ variable "AMIs" {
   }
 }
 
-
-#AWS KEYPAIRS 
-
-variable "PATH_TO_PRIVATE_KEY" {
-  default = "mykey"
+/*SSH Key Name*/
+variable "key_name" {
+  default     = "terraform-key"
+  description = "this to access terraform instance with this key"
 }
-
-
-variable "PATH_TO_PUBLIC_KEY" {
-  default = "mykey.pub"
-}
-
 
 
 

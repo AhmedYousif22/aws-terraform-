@@ -3,6 +3,6 @@ resource "aws_instance" "terraform-instance" {
     instance_type = "t2.micro"
     subnet_id = "${aws_subnet.public-subnet-1.id}"
     security_groups = [aws_security_group.terraform-SG.id]
-    key_name = "${aws_key_pair.mykeypair.key_name}"
+    key_name = "terraform-key"
 }
 
