@@ -1,9 +1,0 @@
-# put your credentails here 
-# this file will be git ignored so wont be commited nor pushed to git repo 
-# it's the file where you hide all of your credentials 
-
-
-AWS_ACCESS_KEY = "AKIA6OWJGKSTSQHUI2R7"
-AWS_SECRET_KEY = "6uNNhRt/9p7179hmEFeCyuKV+FCPWKzC6pu9+Pf/"
-
-# Ignore 
