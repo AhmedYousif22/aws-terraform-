@@ -10,3 +10,4 @@ VPC/mykey
 VPC/.terraform/plugins/darwin_amd64/terraform-provider-aws_v2.64.0_x4
 VPC/.terraform/plugins/darwin_amd64/lock.json
 .DS_Store
+.DS_Store
