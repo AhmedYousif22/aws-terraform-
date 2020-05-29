@@ -3,3 +3,4 @@ terraform.csv.gitignore
 .DS_Store
 VPC-intro/credentials.tfvars
 VPC/credentials.tfvars
+.DS_Store
