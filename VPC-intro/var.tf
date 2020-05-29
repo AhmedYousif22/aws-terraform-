@@ -24,7 +24,3 @@ variable "AMIs" {
 
 
 
-
-
-
-
