@@ -10,7 +10,10 @@ resource "aws_eip" "nat-eip" {
 resource "aws_nat_gateway" "NAT-gateway" {
     allocation_id = "${aws_eip.nat-eip.id}"
     subnet_id = "${aws_subnet.public-subnet-1.id}"
-    depends_on = "${aws_internet_gateway.terraform-IGW.id}" # depends on the internet gatway
+    depends_on = [aws_internet_gateway.terraform-IGW] # depends on the internet gatway
+    tags = {
+        Name = "NAT-gateway"
+    }
 }
 
 # NAT gateway configuration in VPC 
