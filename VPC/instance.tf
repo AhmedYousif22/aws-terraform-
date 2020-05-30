@@ -4,6 +4,9 @@ resource "aws_instance" "terraform-instance" {
     subnet_id = "${aws_subnet.public-subnet-1.id}"
     security_groups = [aws_security_group.terraform-SG.id]
     key_name = "terraform-key"
+    tags = {
+        Name = "terraform-instance"
+    }
 }
 
 resource "aws_ebs_volume" "terraform-volume" {
@@ -16,7 +19,7 @@ resource "aws_ebs_volume" "terraform-volume" {
 }
 
 resource "aws_volume_attachment" "terraform-volume-attachement" {
-    device_name = "dev/xvdh"
+    device_name = "/dev/xvdh"
     volume_id = "${aws_ebs_volume.terraform-volume.id}"
     instance_id = "${aws_instance.terraform-instance.id}"
 }
