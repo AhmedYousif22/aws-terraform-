@@ -29,3 +29,6 @@ variable "key_name" {
 
 
 
+variable "INSTANCE_DEVICE_NAME" {
+  default = "/dev/xvdh"
+}
